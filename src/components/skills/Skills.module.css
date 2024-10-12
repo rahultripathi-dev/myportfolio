@@ -1,0 +1,27 @@
+.skills {
+    margin: 2rem 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .skillList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skill {
+    background-color: #3182ce;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  :global(.darkMode) .skill {
+    background-color: #4a5568;
+  }

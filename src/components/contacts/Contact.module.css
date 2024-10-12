@@ -1,0 +1,53 @@
+/* Contact.module.css */
+.contactSection {
+    margin: 32px 0; /* Equivalent to my-8 */
+  }
+  
+  .contactTitle {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+  }
+  
+  .contactDescription {
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+  }
+  
+  .contactLinks {
+    display: flex;
+    gap: 16px; /* Equivalent to space-x-4 */
+  }
+  
+  .emailButton,
+  .linkedinButton,
+  .githubButton {
+    color: white;
+    padding: 8px 16px; /* Equivalent to px-4 py-2 */
+    border-radius: 8px; /* Equivalent to rounded */
+    text-decoration: none;
+  }
+  
+  .emailButton {
+    background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+  }
+  
+  .emailButton:hover {
+    background-color: #2563eb; /* Equivalent to hover:bg-blue-600 */
+  }
+  
+  .linkedinButton {
+    background-color: #1e40af; /* Equivalent to bg-blue-700 */
+  }
+  
+  .linkedinButton:hover {
+    background-color: #1e3a8a; /* Equivalent to hover:bg-blue-800 */
+  }
+  
+  .githubButton {
+    background-color: #111827; /* Equivalent to bg-gray-800 */
+  }
+  
+  .githubButton:hover {
+    background-color: #1f2937; /* Equivalent to hover:bg-gray-900 */
+  }
+  

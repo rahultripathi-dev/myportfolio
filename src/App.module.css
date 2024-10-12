@@ -1,0 +1,21 @@
+.app {
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .darkMode {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      padding: 1rem;
+    }
+  }

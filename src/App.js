@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import styles from './App.module.css';
+import About from './components/about';
+import Skills from './components/skills';
+import Contact from './components/contacts';
+import Header from './components/header';
+import Projects from './components/projects';
 
-function App() {
+const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${styles.app} ${darkMode ? styles.darkMode : ''}`}>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <motion.main 
+        className={styles.main}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </motion.main>
     </div>
   );
-}
+};
 
 export default App;

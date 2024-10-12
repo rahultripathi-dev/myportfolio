@@ -1,0 +1,15 @@
+/* About.module.css */
+.aboutSection {
+    margin: 32px 0; /* Equivalent to my-8 */
+  }
+  
+  .aboutTitle {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+  }
+  
+  .aboutDescription {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+  }
+  

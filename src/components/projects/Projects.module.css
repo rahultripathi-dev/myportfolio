@@ -1,0 +1,28 @@
+/* Projects.module.css */
+.projectsSection {
+    margin: 32px 0; /* Equivalent to my-8 */
+  }
+  
+  .projectsTitle {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+  }
+  
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px; /* Equivalent to gap-6 */
+  
+    /* Responsive styling for larger screens */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); /* Equivalent to md:grid-cols-2 */
+    }
+  }
+  
+  .projectCard {
+    background-color: white;
+    padding: 24px; /* Equivalent to p-6 */
+    border-radius: 8px; /* Equivalent to rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
